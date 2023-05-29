@@ -8,13 +8,13 @@ from pyentrp import entropy as ent
 # import TimeLib
 
 import pandas as pd
-# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/guenfuza_fi/0947-0957/cleaned/"
-file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/takano_nanami/0947-0957/cleaned/"
-# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/ri_shouki/0947-0957/cleaned/"
-# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/maki_hana/0947-0957/ch2/cleaned/"
+# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/sub_GF/0947-0957/cleaned/"
+file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/sub_TN/0947-0957/cleaned/"
+# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/sub_RS/0947-0957/cleaned/"
+# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/sub_MH/0947-0957/ch2/cleaned/"
 # file_path = "/home/user/Users/kai/data/pose_results/20220627_5th_period/first_v2/cleaned/"
-# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/maki_hana/1010-1020/cleaned/"
-# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/takano_nanami/1000-1010/cleaned/"
+# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/sub_MH/1010-1020/cleaned/"
+# file_path = "/home/user/Users/kai/data/pose_results/minamiyoshida_1012/sub_TN/1000-1010/cleaned/"
 
 from scipy.interpolate import interp1d
 def LinearInterpolationFunction(data):
@@ -106,16 +106,16 @@ def Movement_Trajectory(data,shoulder_point,data_x,data_y, graph_title="", save_
     plt.ylabel("Y coordinate [pixel]", fontsize=24)
     # plt.tick_params(width = 3.2, length = 40)
     #haba3.5,tate40
-    #guenfuza_fi
+    #sub_GF
     # plt.xlim(11.1,14.5)
     # plt.ylim(100,140)
-    #takano_nanami
+    #sub_TN
     # plt.xlim(11.6,15.1)
     # plt.ylim(-10,30)
-    #ri_shouki
+    #sub_RS
     # plt.xlim(4.8,8.3)
     # plt.ylim(10,50)
-    #maki_hana
+    #sub_MH
     # plt.xlim(9,12.5)
     # plt.ylim(0,40)
     
